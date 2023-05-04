@@ -1,0 +1,89 @@
+@media (min-width: 1440px) {
+    .content {
+        margin-top: 15vh; /* Adjust the value to match the height of your header */
+        margin-bottom: 80px; /* Adjust the value to match the height of your footer */
+        margin-left: 5vh;
+        margin-bottom: 15vh;
+        background-color: var(--color-light-background);
+        font-family: var(--main-font-family);
+        color: var(--color-dark-text);
+        flex: 1;
+        display: grid;
+      }      
+
+      .content div{
+        padding: 5px;
+      }
+      .content.sticky{
+        padding-top:50px;
+        padding-bottom: 2000px;
+    }
+
+    .section{
+      margin-top: 5vh;
+      margin-left: 33vh;
+      margin-right: 33vh;
+      background-color: var(--color-light-background);
+    }
+  
+    .section h2{
+      font-size: 40px;
+      justify-content: right;
+    }
+
+    .section p{
+      font-size: 20px;
+    }
+
+    .section li{
+      font-size: 20px;
+    }
+
+    .personal{
+      margin-top: 2vh;
+    }
+
+    .summary{
+      font-size: 24px;
+      line-height: 2;
+      text-align: justify;
+      margin-top: 2vh;
+    }
+
+    .education
+    {
+      display:flex; 
+      flex-direction: row; 
+      justify-content: center; 
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2vh;
+    }
+
+    .languages
+    {
+      display:flex;
+      flex-direction: row; 
+      justify-content: center; 
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2vh;
+    }
+
+    hr {
+      border: none; /* Remove default border */
+      border-top: 2px solid var(--color-dark-text); /* Add custom border style */
+      margin: 10px 0; /* Add margin for spacing */
+  }
+    .certificates{
+      margin-top: 2vh;
+    }
+
+    .skills{
+      margin-top: 2vh;
+    }
+    .skills{
+      margin-top: 2vh;
+    }
+
+}

@@ -1,0 +1,15 @@
+/* styles.css */
+ 
+@media (min-width: 1440px) {
+    body {
+    font-family: Verdana, sans-serif;
+    background-color: var(--color-light-background);
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    }
+   
+
+}

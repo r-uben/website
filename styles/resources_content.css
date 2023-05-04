@@ -1,0 +1,99 @@
+@media (min-width: 1440px) {
+    .content {
+        margin-top: 15vh; /* Adjust the value to match the height of your header */
+        margin-bottom: 80px; /* Adjust the value to match the height of your footer */
+        margin-left: 5vh;
+        margin-bottom: 15vh;
+        background-color: var(--color-light-background);
+        font-family: var(--main-font-family);
+        color: var(--color-dark-text);
+        flex: 1;
+        display: grid;
+      }      
+
+      .content div{
+        padding: 5px;
+      }
+      .content.sticky{
+        padding-top:50px;
+        padding-bottom: 2000px;
+    }
+
+    .section p{
+      font-size: auto;
+      position: flex-end;
+      text-align: justify;
+      justify-content: center;
+      line-height: 2;
+    }
+    .post{
+      margin-top: 15vh; /* Adjust the value to match the height of your header */
+        margin-bottom: 80px; /* Adjust the value to match the height of your footer */
+        margin-left: 33vh;
+        margin-bottom: 15vh;
+        margin-right: 33vh;
+        background-color: var(--color-light-background);
+        font-family: var(--main-font-family);
+        color: var(--color-dark-text);
+        flex: 1;
+        display: grid;
+    }
+
+    .section{
+      margin-top: 5vh;
+      margin-left: 33vh;
+      margin-right: 33vh;
+      background-color: var(--color-light-background);
+    }
+  
+    .section h2{
+      font-size: 40px;
+      justify-content: right;
+    }
+
+
+    .subtitle{
+      font-size: 22px;
+    }
+    .paper{
+      line-height: 2;
+      margin-top: 2vh;
+    }
+    .abstract{
+      position: flex-end;
+      text-align: justify;
+      justify-content: center;
+    }
+
+    .links:link { 
+      text-decoration: none; 
+      color: var(--color-dark-text);
+    }
+
+
+    .links:visited { 
+      text-decoration: none; 
+      color: var(--color-dark-text);
+    }
+
+
+    .links:hover { 
+      text-decoration: none; 
+      color: var(--color-light-hover);}
+
+
+    .links:active { text-decoration: none; 
+      color: var(--color-hover);}
+
+
+
+
+
+    hr {
+      border: none; /* Remove default border */
+      border-top: 2px solid var(--color-dark-text); /* Add custom border style */
+      margin: 10px 0; /* Add margin for spacing */
+  }
+
+
+}

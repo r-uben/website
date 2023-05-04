@@ -1,0 +1,22 @@
+/* Social media icons container */
+.social-media-icons {
+    position: absolute; /* Use flexbox to align items */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Vertically center items */
+    margin-top: 10px; /* Add margin for spacing from header content */
+    left: 5vh;
+}
+
+/* Social media icon */
+.social-media-icons a {
+    margin-right: 10px; /* Add horizontal margin for spacing between icons */
+}
+
+/* Social media icon image */
+.social-media-icons img {
+    width: 30px; /* Set width of icons */
+    height: 30px; /* Set height of icons */
+    object-fit: cover; /* Preserve aspect ratio of icons */
+    border-radius: 50%; /* Add border-radius for rounded icons */
+    filter: var(--color-nav-text);
+}

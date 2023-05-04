@@ -1,0 +1,13 @@
+/* colours.css */
+:root {
+    --color-primary: #007bff; /* Define your primary color */
+    --color-secondary: #6c757d; /* Define your secondary color */
+    --color-accent: #ff7f50; /* Define your accent color */
+    --color-light-background: #fef0da; /* Light background */
+    --color-dark-background: #5a4c3a; /* Dark background */
+    --color-nav-text:  var(--color-light-background); /* Navigation Bar text */
+    --color-dark-text: var(--color-dark-background);
+    --color-hover: #c5965dd3;
+    --color-light-hover:  #c5a470af;
+    /* Add more color variables as needed */
+  }

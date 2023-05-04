@@ -1,0 +1,48 @@
+    .box{
+        position: relative;
+        display: flex; /* Use flexbox to align items */
+        flex-direction: row; /* Stack items vertically */
+        align-items: center; /* Horizontally center items */
+        max-width: 75%; 
+        padding: 0vh;
+        margin: auto;
+        margin-top: 20vh;
+        background-color: var(--color-light-background);
+    }
+
+    
+    .text-box {
+        color: var(--color-dark-background);
+        max-width: 50%;
+        max-height: 75%;
+        margin-right: auto;
+        justify-content: center;
+        text-align: right;
+        background-color: var(--color-light-background);
+        box-sizing: border-box; /* Include the border in the box's total width and height */
+        line-height: 2; /* Increase the line height to 1.5 times the font size */
+        /* border: 3px solid transparent var(--color-light-background); /* Set transparent border */
+        /* box-shadow: 0 0 20px 3px var(--color-dark-background);
+        border-radius: 10px; /* Add border-radius property with desired value */
+    }
+
+    .text-box h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+
+    .text-box p {
+        text-align: justify;
+        font-size: 20px;
+    }
+      
+
+    .image-box img {
+        max-width: 65%; /* Set maximum width of image to 20% */
+        max-height: auto; /* Set maximum height of image to 80% */
+        height: auto; /* Allow image height to adjust proportionally */
+        border: 3px solid transparent var(--color-light-background); /* Set transparent border */
+        box-shadow: 0 0 20px 3px var(--color-dark-background); /* Apply blur effect to box shadow */
+        justify-content: center;
+        position: relative;
+    }

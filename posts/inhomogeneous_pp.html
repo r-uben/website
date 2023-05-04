@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV - Rubén Fernández-Fuertes</title>
+    <link rel="stylesheet" type="text/css" href="../styles/tex.css">
+    <link rel="stylesheet" type="text/css" href="../styles/typographies.css">
+    <link rel="stylesheet" type="text/css" href="../styles/colours.css">
+    <link rel="stylesheet" type="text/css" href="../styles/socialmedia.css">
+    <link rel="stylesheet" type="text/css" href="../styles/header.css">
+    <link rel="stylesheet" type="text/css" href="../styles/resources_content.css">
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main_style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          TeX: {
+            extensions: ["AMSmath.js", "AMSsymbols.js"]
+          },
+          tex2jax: {
+            inlineMath: [['$', '$']]
+          },
+          "HTML-CSS": { availableFonts: ["TeX"] }
+        });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+<body class="body", id="bd">
+    <header class="header", id="hdr">
+        <!-- Header content goes here -->
+        <nav>
+            <div class="social-media-icons">
+                <a href="https://github.com/r-uben"  target="_blank"><img src="../styles/assets/github.png" alt="Github"></a>
+                <a href="https://twitter.com/__rub_" target="_blank"><img src="../styles/assets/twitter.png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/in/rubén-fernández-fuertes/" target="_blank"><img src="../styles/assets/linkedin.png" alt="linkedin"></a>
+            </div>
+            <ul>
+            <li><a href="#research">Research</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="#data">Data</a></li>
+            <li><a href="../resources.html">Resources</a></li>
+            </ul>
+
+            <div class="homepage">
+                <li><a href="../index.html">Rubén Fernández-Fuertes</a></li>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+    <div class="section">
+        <h2>Inhomogeneous Poisson Processes</h2>
+        <hr>
+        <p>The idea of Inhomogeneous Poisson Processes comes with the need of allowing the arrival rate, $\lambda_t$, 
+            to be time-varying, although still Markovian. That means that the system has no memory and disjoint time intervals are independent. 
+            For example, in a government debt default context, past defaults are not correlated with future defaults. </p>
+        <p> <strong> Definition: </strong>
+                Let $\left(\Omega,\mathcal{F}, \mathbb{P}\right)$ be a probability space. An Inhomogeneous Poisson Process is a counting process, $\left(N_t\right)_{t\geq 0}$ so that 
+                <ol>
+                    <li> $N_t(\omega)\in\mathbb{N}$ for every $\omega\in\Omega$. . </li>
+                    <li> $N_0 = 0$. </li>
+                    <li> Increments are independent but not stationary. </li>
+                    <li> $\mathbb{P}\left\{N_{t+h}-N_t = 1\right\} = \lambda_t h + o(h)$.</li>
+                    <li> $\mathbb{P}\left\{N_{t+h} - N_t > 1\right\} = o(h)$.</li>
+                </old>
+        <p>
+        <p>Of course, the main difference with the well-known homogeneous case is that the intensity, $\lambda_t$ is time-varying, so the probabilities change with time. To study how they change, we can consider $\mathbb{P}\left\{N_t = 0\right\}$ to be the probability that, after time $t$, no events have occurred, and then see how this changes in time. Consider $\mathbb{P}\left\{N_{t+h} = 0\right\}$ and divide the time interval $[0,t+h)$ into two disjoint time intervals, $[0,t)$ and $[t,t+h)$. Then, and since ewe are assuming independent increments,</p>     
+            <p>$$
+                \begin{aligned}
+                    \mathbb{P}\left\{N_{t+h} = 0\right\} &= \mathbb{P}\left(\{N_t = 0\} \cap \{N_{t+h}- N_t = 0\}\right) \\
+                                                &= \mathbb{P}\left\{N_t = 0\right\}\times \mathbb{P}\{N_{t+h}- N_t = 0\} = \mathbb{P}\left\{N_t = 0\right\}\times \left(1 - \lambda-t h + o(h)\right).
+                \end{aligned}
+            $$</p>	
+        <p> Let's take the sequence of probabilities $\left(p_{t}^0\right)_{t\geq 0}$, where $p_t^0=\mathbb{P}\left\{N_t = 0\right\}$. Hence, the previous result can be rewritten as</p>
+            <p>$$
+                \frac{p^0_{t+h}-p^0_t}{h} = - \lambda_t p^0_t + o(1).
+            $$</p>
+            <p>Hence, taking $h\to 0$,</p>
+            <p>$$
+                \frac{\text{d} p^0_t}{\text{d} t} = -\lambda_t p^0_t,
+            $$</p>
+            <p>which is equivalent to </p>
+            <p>$$
+                \frac{\text{d}}{\text{d} t} \log p_t^0 = -\lambda_t.
+            $$</p>
+            <p>Solving this ODE with the initial condition that $p_0^0 = 1$, we get</p>
+            <p>$$
+                \log p_t^0 = - \int_0^t \lambda_s\text{d} s,
+            $$</p>
+            <p>i.e.,</p> 
+            <p>\begin{equation}
+                p_t^0 = \exp \left\{-\int_0^t\lambda_s \text{d} s\right\}.
+            \end{equation}</p>
+            <p>If we consider now the general case, i.e., for $n>0$, then,
+            $$
+                \mathbb{P}\left\{N_{t+h} = n\right\} = \sum_{k\geq 0} \mathbb{P}\left\{N_{t+h}-N_t = n-k\right\}\times \mathbb{P}\left\{N_t = k\right\},
+            $$</p>
+            <p>because  $\mathbb{P}\left\{N_{t+h} = n \ | \ N_t = k\right\} = \mathbb{P}\left\{N_{t+h}-N_t = n-k\right\}$, which is zero if $z> n$. Hence, by definition</p>
+            <p>$$
+                \begin{aligned}
+                     \mathbb{P}\left\{N_{t+h}-N_t > 1\right\} &= o(h), \\
+                     \mathbb{P}\left\{N_{t+h}-N_t = 1\right\} &= \lambda_t h + o(h), \\
+                     \mathbb{P}\left\{N_{t+h}-N_t = 0\right\} &= 1 - \lambda_t h + o(h);
+                \end{aligned}
+            $$</p>
+            <p>which means that only two terms matter when $h\to 0$, i.e., </p>
+            <p>$$
+                \mathbb{P}\left\{N_{t+h} = n\right\} \approx \left( 1 - \lambda_t h + o(h)\right)\times \mathbb{P}\left\{N_t = n\right\} + \left(\lambda_t h + o(h)\right)\times \mathbb{P}\left\{N_t = n-1\right\} + o(h).
+            $$</p>
+            <p>If we define analogously, $p_t^n:= \mathbb{P}\left\{N_t = n\right\}$, then we can rewrite it as</p>
+            <p>$$
+                \frac{p^n_{t+h}-p^n_t}{h} = -\lambda_t p_t^n + \lambda_t p_{t}^{n-1} + o(1).
+            $$</p>
+            <p>Now, taking the limit $h\to 0$, we have the following differential equation</p>
+            <p>$$
+                \frac{\text{d}}{\text{d} t}p^n_t = -\lambda_t p^n_t + \lambda_t p^{n-1}_t, \quad\quad n> 0.
+            $$</p>
+            <p>We must then solve</p>
+            <p>\begin{equation}
+                \begin{cases}
+                    \frac{\text{d}}{\text{d} t}p^n_t &= -\lambda_t p^n_t + \lambda_t p^{n-1}_t, \quad\quad n> 0.\\
+                    \frac{\text{d}}{\text{d} t}p_t^0  &= - \lambda_t p^0_t,
+                \end{cases}
+            \end{equation}</p>
+            <p>where $p_0^0 = 1$ and $p_0^n = 0$ for $n > 0$. The first equation can be rewritten as</p>
+            <p>$$
+                    \frac{\text{d}}{\text{d} t}p^n_t + \lambda_t p_t^n = \lambda_t p_t^{n-1}.
+            $$</p>
+            <p>If we multiply in both sides by $e^{\int_0^t \lambda_s \text{d} s}$, then </p>
+            <p>$$
+                e^{\int_0^t \lambda_s \text{d} s}\frac{\text{d}}{\text{d} t}p^n_t + \lambda_t e^{\int_0^t \lambda_s \text{d} s}p_t^n = \lambda_t e^{\int_0^t \lambda_s \text{d} s}p_t^{n-1},
+            $$</p>
+            <p>i.e., </p>
+            <p>$$
+                \frac{\text{d}}{\text{d} t}\left(e^{\int_0^t \lambda_s \text{d} s} p_t^n\right) = \lambda_t e^{\int_0^t \lambda_s \text{d} s}p_t^{n-1}.
+            $$</p>
+            <p>If we define $p_t^n\:= e^{\int_0^t \lambda_s \text{d} s} p_t^n$, then we have to solve</p>
+            <p>$$
+                \frac{\text{d}}{\text{d} t} p^n_t = \lambda_t p_t^{n-1}, \quad\quad n\geq 0,
+            $$</p>
+            <p>where $\frac{\text{d}}{\text{d} t} p_t^0 = 0$. For $n=1$,</p>
+            <p>$$
+            \frac{\text{d}}{\text{d} t} p^1_t = \lambda_, \quad\quad n\geq 0.
+            $$</p>
+            <p>Hence,</p>
+            <p>$$
+                p^1_t = \int_0^t \lambda_s \text{d} s.
+            $$</p>
+            <p>For $n=2$, </p>
+            <p>$$
+                p_t^2 = \int_0^t \lambda_s \int_0^s \lambda_u \text{d} u\text{d} s = \frac{1}{2}\left(\int_0^t \lambda_s\text{d} s\right)^2.
+            $$</p>
+            <p>By induction, we get easily that</p>
+            <p>$$
+                z_t^n = \frac{1}{n!}\left(\int_0^t \lambda_s \text{d} s\right)^n,
+            $$</p>
+            <p>and therefore,</p>
+            <p>\begin{equation}
+                p^n_t := \frac{1}{n!} e^{-\int_0^t \lambda_s \text{d} s} \left[\int_0^t \lambda_s \text{d} s\right]^n.
+            \end{equation}</p>
+            <p>To compute the expectation, we just use the definition and definining $\theta_t \:= \int_0^t \lambda_s \text{d} s$,</p>
+            <p>\begin{align}
+                    \mathbb{E}[N_t] &= \int_\Omega N_t(\omega)\text{d} \mathbb{P}(\omega) = \sum_{n\geq 0} n p_t^n =  e^{-\theta_t}\sum_{n\geq 0}\frac{n \theta_t^n}{n!} = \theta_te^{-\theta_t}  \sum_{n\geq 0}\frac{\mathbb{P}si_{t}^{n-1}}{(n-1)!} = \theta_t e^{-\theta_t}e^{\theta_t} = \theta_t.
+            \end{align}</p>
+            <p>Note on the other hand that $\mathbb{E}\left[N_t - \theta_t\right] = 0$ for al $t$, which means that $\left(N_t-\theta_t\right)_{t\geq 0}$ is a martingale. 
+                Note that we can write the process as well as</p>
+            <p>$$
+                \text{d} N_t = \lambda_t \text{d} t.
+            $$</p>
+            <p>On the other hand, and to conclude,</p>
+            <p>$$
+                \mathbb{E}\left[N_t - N_s\right] = \theta_t-\theta_s = \theta_{t-s},
+            $$</p>
+            <p>which explains the notation that Costain et al. (2022) use in the paper, i.e., </p>
+            <p>\begin{equation}
+                \mathbb{E}\left[\text{d} N_t \right] = \theta_t.
+            \end{equation}</p>
+    </div>
+</div>
+    <footer class="footer", id="ftr">
+        <!-- Footer content goes here -->
+        <p>&copy; 2023 Rubén Fernández-Fuertes.</p>
+      </footer>
+</body>
+</html>
