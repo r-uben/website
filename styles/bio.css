@@ -69,7 +69,7 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 980px) {
         .text-box h2{
             font-size: 40px;
         }
