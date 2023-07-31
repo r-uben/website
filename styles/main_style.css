@@ -1,15 +1,38 @@
 /* styles.css */
  
+/* CSS rules for screen widths 1440 pixels and above */
 @media (min-width: 1440px) {
     body {
-    font-family: Verdana, sans-serif;
-    background-color: var(--color-light-background);
-    margin: 0;
-    display: flex;
-    min-height: 100vh;
-    overflow: hidden;
-    overflow-y: scroll;
+        font-family: Verdana, sans-serif;
+        background-color: var(--color-light-background);
+        margin: 0;
+        display: flex;
+        min-height: 100vh;
+        overflow: hidden;
+        overflow-y: scroll;
     }
-   
+}
 
+/* CSS rules for screen widths between 768 pixels and 1439 pixels (intermediate size) */
+@media (min-width: 800px) and (max-width: 1439px) {
+    body {
+        font-family: Verdana, sans-serif;
+        background-color: var(--color-light-background);
+        margin: 0;
+        display: block;
+        height: 100%;
+        overflow: auto;
+    }
+}
+
+/* CSS rules for screen widths 767 pixels and below (mobile phones) */
+@media (max-width: 800px) {
+    body {
+        font-family: Verdana, sans-serif;
+        background-color: var(--color-light-background);
+        margin: 0;
+        display: block;
+        height: 100%;
+        overflow: auto;
+    }
 }

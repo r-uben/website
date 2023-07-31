@@ -16,4 +16,97 @@
     }
 
     footer.sticky{position: sticky;bottom: 0;}
+
+    nav .social-media-icons-footer{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-dark-background);
+        height: 5vh;
+        padding: 5px;
+        color: var(--color-light-background);
+    }
+
+    footer p {
+        display: flex;
+        justify-content: center; /* Horizontally center the content */
+        align-items: center; /* Vertically center the content */
+        padding: 5px;
+    }
+
+    footer.sticky{position: sticky;bottom: 0;}
+
+    nav {
+        display: flex; /* Use flexbox for horizontal layout */
+        justify-content: center; /* Center align the list items */
+    }
+
+    nav div {
+        display: flex;
+    }
+
+    /* Styles for the links in the navigation bar */
+    nav div a {
+        text-decoration: none; /* Remove underline from links */
+        color: var(--color-nav-text); /* Set text color */
+        font-size: 25px; /* Set font size */
+    }
+
+    nav a:hover {
+        color: var(--color-hover); /* Change text color on hover */
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-dark-background);
+        height: 5vh;
+        padding: 5px;
+        color: var(--color-light-background);
+    }
+
+    footer p {
+        display: flex;
+        justify-content: center; /* Horizontally center the content */
+        align-items: center; /* Vertically center the content */
+        padding: 5px;
+    }
+
+    footer.sticky{position: sticky;bottom: 0;}
+
+    nav {
+        display: flex; /* Use flexbox for horizontal layout */
+        justify-content: center; /* Center align the list items */
+    }
+
+    nav div {
+        display: flex;
+    }
+
+    /* Styles for the links in the navigation bar */
+    nav div a {
+        text-decoration: none; /* Remove underline from links */
+        color: var(--color-nav-text); /* Set text color */
+        font-size: 25px; /* Set font size */
+    }
+
+    nav a:hover {
+        color: var(--color-hover); /* Change text color on hover */
+    }
+
 }

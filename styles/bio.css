@@ -46,3 +46,25 @@
         justify-content: center;
         position: relative;
     }
+
+
+    @media (max-width: 1200px) {
+        .text-box {
+            color: var(--color-dark-background);
+            max-width: 100%;
+            max-height: 75%;
+            margin-right: 5vh;
+            margin-left: 5vh;
+            justify-content: center;
+            text-align: right;
+            background-color: var(--color-light-background);
+            box-sizing: border-box; /* Include the border in the box's total width and height */
+            line-height: 2; /* Increase the line height to 1.5 times the font size */
+            /* border: 3px solid transparent var(--color-light-background); /* Set transparent border */
+            /* box-shadow: 0 0 20px 3px var(--color-dark-background);
+            border-radius: 10px; /* Add border-radius property with desired value */
+        }
+        .image-box img {
+            display: None;
+        }
+    }
