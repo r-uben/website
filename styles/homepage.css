@@ -1,10 +1,29 @@
+/* CSS rules for screen widths 1440 pixels and above */
 @media (min-width: 1440px) {
-        
-    .box{
+    .box {
         min-height: 100vh;
         margin-left: 5%;
         margin-right: 5%;
-        left:10;
+        left: 10; /* Note: This should be left: 10px; for it to work as intended */
     }
-    
+}
+
+
+@media (min-width: 800px) and (max-width: 1439px) {
+    .box {
+        min-height: 80vh;
+        margin-left: 3%;
+        margin-right: 3%;
+        left: 5px;
+    }
+}
+
+/* CSS rules for screen widths 767 pixels and below (mobile phones) */
+@media (max-width: 800px) {
+    .box {
+        min-height: 100vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        left: 10; /* Note: This should be left: 10px; for it to work as intended */
+    }
 }

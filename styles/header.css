@@ -1,3 +1,4 @@
+
 @media (min-width: 1440px) {
 
     .header {
@@ -10,37 +11,6 @@
     }
 
     header.sticky{position:sticky;top:0}
-    
-    /* Styles for the navigation bar */
-    nav {
-        display: flex; /* Use flexbox for horizontal layout */
-        justify-content: center; /* Center align the list items */
-    }
-
-    /* Styles for the list items in the navigation bar */
-    nav ul {
-        position: absolute;
-        list-style-type: none; /* Remove default list style */
-        padding: 0; /* Remove padding from list */
-        display: flex; /* Use flexbox for horizontal layout of list items */
-    }
-    
-    nav li {
-        margin: 0 15px; /* Add margin between list items */
-        display: flex; /* Use flexbox for horizontal layout of list items */
-        align-items: center; /* Center align list items vertically */
-    }
-    
-    /* Styles for the links in the navigation bar */
-    nav a {
-        text-decoration: none; /* Remove underline from links */
-        color: var(--color-nav-text); /* Set text color */
-        font-size: 20px; /* Set font size */
-    }
-    
-    nav a:hover {
-        color: var(--color-hover); /* Change text color on hover */
-    }
 
    
     .homepage {
@@ -53,5 +23,228 @@
     .homepage a{
         font-size: 20px;
     }
+
+     /* Styles for the navigation bar */
+nav {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center align the list items */
+}
+
+/* Styles for the list items in the navigation bar */
+nav ul {
+    position: absolute;
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove padding from list */
+    display: flex; /* Use flexbox for horizontal layout of list items */
+}
+
+nav li {
+    margin: 0 15px; /* Add margin between list items */
+    display: flex; /* Use flexbox for horizontal layout of list items */
+    align-items: center; /* Center align list items vertically */
+}
+
+/* Styles for the links in the navigation bar */
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: var(--color-nav-text); /* Set text color */
+    font-size: 20px; /* Set font size */
+}
+
+nav a:hover {
+    color: var(--color-hover); /* Change text color on hover */
+}
+
+.homepage-mobile-phone{
+display: none;
+}
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    
+    /* .social-media-icons {
+        display: none;
+    } */
+
+    .homepage {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--color-dark-background);
+        color: var(--color-light-background);
+        padding: 5vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    .header {
+        position: fixed;
+        width: 100%;
+        background-color: var(--color-dark-background);
+        color: var(--color-light-background);
+        padding: 2.5vh;
+        height: 6vh;
+    }
+
+    .homepage-mobile-phone {
+        position: absolute;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 1.5vh;
+        left: 5vh;
+    }
+
+    .homepage-mobile-phone a {
+        font-size: 10px;
+    }
+
+    .homepage-mobile-phone img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 20%;
+        filter: var(--color-nav-text);
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Styles for the navigation bar */
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Styles for the list items in the navigation bar */
+    nav ul {
+        position: absolute;
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+    }
+
+    nav li {
+        margin: 0 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Styles for the links in the navigation bar */
+    nav a {
+        text-decoration: none;
+        color: var(--color-nav-text);
+        font-size: 25px;
+    }
+
+    nav a:hover {
+        color: var(--color-hover);
+    }
+}
+
+@media (max-width: 767px) {
+
+    .social-media-icons{
+        display: none;
+    }
+
+    .homepage{
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--color-dark-background);
+        color: var(--color-light-background);
+        padding: 5vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+      }
+
+    
+    
+      nav.active {
+        display: block;
+      }
+
+      .header {
+        position:fixed;
+        width: 100%;
+        background-color: var(--color-dark-background);
+        color: var(--color-light-background);
+        padding: 2.5vh;
+        height: 6vh;
+    }
+
+
+    .homepage-mobile-phone {
+        position: absolute; /* Use flexbox to align items */
+        justify-content: flex-start; /* Align items to the left */
+        align-items: center; /* Vertically center items */
+        margin-top: 1.5vh; /* Add margin for spacing from header content */
+        left: 5vh;
+    }
+
+    .homepage-mobile-phone a{
+        font-size: 10px;
+    }
+
+    .homepage-mobile-phone img {
+        width: 30px; /* Set width of icons */
+        height: 30px; /* Set height of icons */
+        object-fit: cover; /* Preserve aspect ratio of icons */
+        border-radius: 20%; /* Add border-radius for rounded icons */
+        filter: var(--color-nav-text);
+    }
+    .menu-icon{
+        display: block;
+    }
+
+     /* Styles for the navigation bar */
+nav {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center align the list items */
+}
+
+/* Styles for the list items in the navigation bar */
+nav ul {
+    position: absolute;
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove padding from list */
+    display: flex; /* Use flexbox for horizontal layout of list items */
+}
+
+nav li {
+    margin: 0 15px; /* Add margin between list items */
+    display: flex; /* Use flexbox for horizontal layout of list items */
+    align-items: center; /* Center align list items vertically */
+}
+
+/* Styles for the links in the navigation bar */
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: var(--color-nav-text); /* Set text color */
+    font-size: 25px; /* Set font size */
+}
+
+nav a:hover {
+    color: var(--color-hover); /* Change text color on hover */
+}
 
 }
