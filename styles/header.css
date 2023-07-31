@@ -77,7 +77,7 @@ display: none;
         align-items: center;
         background-color: var(--color-dark-background);
         color: var(--color-light-background);
-        padding: 5vh;
+        padding: vh;
         position: fixed;
         top: 0;
         left: 0;

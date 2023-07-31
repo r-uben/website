@@ -70,6 +70,10 @@
       justify-content: space-between;
       margin-top: 2vh;
     }
+    /* .education2 div:last-child {
+      visibility: hidden;
+      opacity: 0;
+  } */
 
     .languages
     {
@@ -176,6 +180,11 @@
     margin-top: 2vh;
   }
 
+  .education2 div:last-child {
+    visibility: hidden;
+    opacity: 0;
+}
+
   .languages
   {
     display:flex;
@@ -209,42 +218,43 @@
 
 @media (max-width: 768px) {
   .content {
-      margin-top: 10vh; /* Adjust the value to match the height of your header */
-      margin-bottom: 50px; /* Adjust the value to match the height of your footer */
-      margin-left: 0vh; 
+      position: relative;
+      margin-top: 15vh; /* Adjust the value to match the height of your header */
+      margin-bottom: 15vh; /* Adjust the value to match the height of your footer */
+      margin-left: 2.5vh;
+      margin-right: 2.5vh;
       background-color: var(--color-light-background);
       font-family: var(--main-font-family);
       color: var(--color-dark-text);
-      flex: 1;
+      align-items: center; 
       display: grid;
     }      
 
-    .content div{
-      padding: 5px;
-    }
-    .content.sticky{
-      padding-top:0px;
-      padding-bottom: 30px;
+  .content p {
+    font-size: 20px;
   }
 
+
   .section{
-    margin-top: 5vh;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    margin-top: 0vh;
     background-color: var(--color-light-background);
   }
 
   .section h2{
-    font-size: 30px;
+    font-size: 33px;
     justify-content: right;
   }
 
   .section p{
-    font-size: 18px;
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: justify;
   }
 
+
+          /*
   .section li{
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .personal{
@@ -287,7 +297,7 @@
     justify-content: space-between;
     margin-top: 2vh;
   }
-
+*/
   hr {
     border: none; /* Remove default border */
     border-top: 2px solid var(--color-dark-text); /* Add custom border style */
@@ -298,13 +308,9 @@
   }
 
   .skills{
-    display:flex;
-    flex-direction: row; 
     justify-content: center; 
-    align-items: center;
-    justify-content: space-between;
     margin-top: 2vh;
 
-  }
+  } */
 
 }
