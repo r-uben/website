@@ -7,8 +7,6 @@
         background-color: var(--color-light-background);
         margin: 0;
         display: flex;
-        min-height: 100vh;
-        overflow: hidden;
         overflow-y: scroll;
     }
 }

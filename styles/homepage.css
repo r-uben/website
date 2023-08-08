@@ -1,10 +1,8 @@
 /* CSS rules for screen widths 1440 pixels and above */
 @media (min-width: 1440px) {
     .box {
-        min-height: 100vh;
-        margin-left: 5%;
-        margin-right: 5%;
-        left: 10; /* Note: This should be left: 10px; for it to work as intended */
+        position: relative;
+        top: 7.5vh;
     }
 }
 
