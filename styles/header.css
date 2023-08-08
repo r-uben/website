@@ -6,58 +6,67 @@
         width: 100%;
         background-color: var(--color-dark-background);
         color: var(--color-light-background);
-        padding: 1vh;
-        height: 5vh;
+        top: 0px;
+        height: 7.5vh;
     }
 
     header.sticky{position:sticky;top:0}
 
-   
+
+
+    .parent-header
+    {
+        position:relative;
+        margin-left:5%;
+        margin-right:5%;
+        height: 7.5vh;
+    }
+
     .homepage {
-        margin-left: auto;
-        margin-right: 5vh;
-        transform: translateY(66%); /* Translate Y by -50% to vertically center */
-        right: 0;
+        position: absolute;
+        width: 20%;
+        height: 50%;
+        bottom: 25%;
+        left: 0px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .homepage a {
+        font-size: 26px;
+        text-decoration: none;
+        color: var(--color-light-backgrounds);
+    }
+    
+    .homepage-mobile-phone{
+        display: none;
     }
 
-    .homepage a{
-        font-size: 20px;
+    
+    .web-sections {
+        position: absolute;
+        width: 33%;
+        height: 50%;
+        bottom: 25%;
+        left: 33%;
+        display: flex;
+        align-items: center;
     }
 
-     /* Styles for the navigation bar */
-nav {
-    display: flex; /* Use flexbox for horizontal layout */
-    justify-content: center; /* Center align the list items */
-}
+    .web-sections ul {
+        list-style: none;
+        display: flex;
+    }
 
-/* Styles for the list items in the navigation bar */
-nav ul {
-    position: absolute;
-    list-style-type: none; /* Remove default list style */
-    padding: 0; /* Remove padding from list */
-    display: flex; /* Use flexbox for horizontal layout of list items */
-}
+    .web-sections li {
+        margin: 0 30px;
+    }
 
-nav li {
-    margin: 0 15px; /* Add margin between list items */
-    display: flex; /* Use flexbox for horizontal layout of list items */
-    align-items: center; /* Center align list items vertically */
-}
-
-/* Styles for the links in the navigation bar */
-nav a {
-    text-decoration: none; /* Remove underline from links */
-    color: var(--color-nav-text); /* Set text color */
-    font-size: 20px; /* Set font size */
-}
-
-nav a:hover {
-    color: var(--color-hover); /* Change text color on hover */
-}
-
-.homepage-mobile-phone{
-display: none;
-}
+    .web-sections a {
+        text-decoration: none;
+        color: var(--color-light-background);
+        font-size: 28px;
+    }
 
 
 }

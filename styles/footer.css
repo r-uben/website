@@ -2,24 +2,55 @@
 
     .footer {
         position: fixed;
-        bottom: 0;
-        left: 0;
+        bottom: 0vh;
         width: 100%;
         background-color: var(--color-dark-background);
-        height: 5vh;
-        padding: 10px;
+        height: 7.5vh;
         color: var(--color-light-background);
+        
     }
-
-    footer p{
-        margin-left: 5vh;
-    }
-
     footer.sticky{position: sticky;bottom: 0;}
 
-    nav .social-media-icons-footer{
-        display: none;
+
+    .parent-footer{
+        position: relative;
+        margin-left:5%;
+        margin-right:5%;
+        height: 7.5vh;
     }
+
+
+    .signature{
+        position: absolute;
+        width: 20%;
+        height: 50%;
+        align-items: center;
+        bottom: 25%;
+        left: 0px;
+      }
+
+      .signature p{
+        transform: translate(-0%, -50%);
+        font-size: 20px;
+      }
+
+      .social-media-icons-footer {
+        position: absolute;
+        width: 20%;
+        height: 50%;
+        bottom: 25%;
+        right: 0px;
+    }
+
+    .social-media-icons-footer img {
+        float: right;
+        max-height: 50%;
+        transform: translate(-0%, 50%);
+        right: 0px;
+        bottom: 0px;
+        margin: 0 20px; /* Add some horizontal spacing between icons */
+    }
+
 }
 
 @media (min-width: 981px) and (max-width: 1439px) {

@@ -1,24 +1,15 @@
-    .box{
-        position: relative;
-        display: flex; /* Use flexbox to align items */
-        flex-direction: row; /* Stack items vertically */
-        align-items: center; /* Horizontally center items */
-        max-width: 75%; 
-        padding: 0vh;
-        margin: auto;
-        margin-top: 20vh;
-        background-color: var(--color-light-background);
-    }
-
     
+@media (min-width: 1440px) {
+
+
     .text-box {
-        color: var(--color-dark-background);
-        max-width: 50%;
-        max-height: 75%;
-        margin-right: auto;
+        position: absolute;
+        max-width: 33%;
+        left: 10%;
+        top: 17.5%;
+        bottom: 17.5%;
         justify-content: center;
         text-align: right;
-        background-color: var(--color-light-background);
         box-sizing: border-box; /* Include the border in the box's total width and height */
         line-height: 2; /* Increase the line height to 1.5 times the font size */
         /* border: 3px solid transparent var(--color-light-background); /* Set transparent border */
@@ -27,25 +18,33 @@
     }
 
     .text-box h2 {
-        font-size: 30px;
-        margin-bottom: 10px;
+        font-size: 40px;
       }
 
     .text-box p {
         text-align: justify;
-        font-size: 20px;
+        font-size: 22px;
+    }
+
+    .image-box{
+        position: absolute;
+        bottom: 22.5%;
+        right: 15%;
+        width: 25%;
     }
       
 
     .image-box img {
-        max-width: 65%; /* Set maximum width of image to 20% */
-        max-height: auto; /* Set maximum height of image to 80% */
-        height: auto; /* Allow image height to adjust proportionally */
-        border: 3px solid transparent var(--color-light-background); /* Set transparent border */
+        float: right;
+        width: 100%;
+        border: 2px solid transparent var(--color-light-background); /* Set transparent border */
         box-shadow: 0 0 20px 3px var(--color-dark-background); /* Apply blur effect to box shadow */
         justify-content: center;
         position: relative;
+        text-align: right;
     }
+    
+}
 
 
     @media (max-width: 1440px) {
