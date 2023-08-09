@@ -5,9 +5,9 @@
     .text-box {
         position: absolute;
         max-width: 33%;
-        left: 10%;
+        left: 11%;
         top: 17.5%;
-        bottom: 17.5%;
+        bottom: auto;
         justify-content: center;
         text-align: right;
         box-sizing: border-box; /* Include the border in the box's total width and height */
@@ -15,6 +15,7 @@
         /* border: 3px solid transparent var(--color-light-background); /* Set transparent border */
         /* box-shadow: 0 0 20px 3px var(--color-dark-background);
         border-radius: 10px; /* Add border-radius property with desired value */
+        color: var(--color-dark-text);
     }
 
     .text-box h2 {
@@ -28,9 +29,12 @@
 
     .image-box{
         position: absolute;
+        top: 17.5%;
         bottom: 22.5%;
         right: 15%;
         width: 25%;
+        height: auto;
+        background-color: white;
     }
       
 

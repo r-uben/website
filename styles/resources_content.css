@@ -14,6 +14,7 @@
       .content div{
         padding: 5px;
       }
+
       .content.sticky{
         padding-top:50px;
         padding-bottom: 2000px;
@@ -27,7 +28,7 @@
       line-height: 2;
     }
     .post{
-      margin-top: 15vh; /* Adjust the value to match the height of your header */
+       margin-top: 15vh; /* Adjust the value to match the height of your header */
         margin-bottom: 80px; /* Adjust the value to match the height of your footer */
         margin-left: 33vh;
         margin-bottom: 15vh;
@@ -51,9 +52,12 @@
       justify-content: right;
     }
 
+    .section p{
+      font-size: 1.5rem;
+    }
 
     .subtitle{
-      font-size: 22px;
+      font-size:2rem;
     }
     .paper{
       line-height: 2;

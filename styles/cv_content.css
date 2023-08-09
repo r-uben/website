@@ -20,6 +20,9 @@
         padding-bottom: 2000px;
     }
 
+
+    
+
     .section{
       margin-top: 5vh;
       margin-left: 33vh;
@@ -28,71 +31,101 @@
     }
   
     .section h2{
-      font-size: 40px;
+      font-size: 2rem;
       justify-content: right;
     }
 
     .section p{
-      font-size: 20px;
+      font-size: 1.5rem;
     }
 
-    .section li{
-      font-size: 20px;
-    }
 
-    .personal{
-      margin-top: 2vh;
-    }
-
-    .summary{
-      font-size: 24px;
+    .section-content{
       line-height: 2;
       text-align: justify;
       margin-top: 2vh;
     }
 
-    .education
-    {
-      display:flex; 
-      flex-direction: row; 
-      justify-content: center; 
-      align-items: center;
-      justify-content: space-between;
+    .section-content-horizontal{
+      line-height: 2;
+      text-align: justify;
       margin-top: 2vh;
+      display: flex;
+      gap: 10%;
     }
 
-    .education2
-    {
-      display:flex; 
-      flex-direction: row; 
-      justify-content: center; 
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 2vh;
-    }
-    /* .education2 div:last-child {
-      visibility: hidden;
-      opacity: 0;
-  } */
 
-    .languages
-    {
-      display:flex;
-      flex-direction: row; 
-      justify-content: center; 
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 2vh;
+    .section-content-horizontal-left{
+      width: 45%;
     }
+
+    .section-content-horizontal-right{
+      width:45%;
+    }
+
+    .section-content-horizontal-left p {
+      display: flex;
+      justify-content: left;
+      font-size: 1.5rem;
+    }
+
+    .section-content-horizontal-right p {
+      display: flex;
+      justify-content: right;
+      font-size: 1.5rem;
+    }
+
+    .section-content-horizontal-3{
+      line-height: 2;
+      text-align: justify;
+      margin-top: 2vh;
+      display: flex;
+      gap: 11.25%;
+    }
+
+    .section-content-horizontal-3 p {
+      font-size: 1.5rem;
+    }
+
+    .section-content-horizontal-3-left{
+      width: 26%;
+    }
+
+    .section-content-horizontal-3-center{
+      width: 26%;
+    }
+
+    
+    .section-content-horizontal-3-right{
+      width:26%;
+    }
+
+    .section-content-horizontal-3-left p {
+      display: flex;
+      justify-content: left;
+      font-size: 1.5rem;
+    }
+
+    .section-content-horizontal-3-center p {
+      display: flex;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+
+
+    .section-content-horizontal-3-right p {
+      display: flex;
+      justify-content: right;
+      font-size: 1.5rem;
+    }
+
 
     hr {
       border: none; /* Remove default border */
       border-top: 2px solid var(--color-dark-text); /* Add custom border style */
       margin: 10px 0; /* Add margin for spacing */
   }
-    .certificates{
-      margin-top: 2vh;
-    }
+
 
     .skills{
       display:flex;
@@ -101,7 +134,10 @@
       align-items: center;
       justify-content: space-between;
       margin-top: 2vh;
+    }
 
+    .skills p{
+      font-size: 1.25rem;
     }
 
 }

@@ -17,6 +17,8 @@
         margin-left:5%;
         margin-right:5%;
         height: 7.5vh;
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -24,14 +26,15 @@
         position: absolute;
         width: 20%;
         height: 50%;
-        align-items: center;
         bottom: 25%;
         left: 0px;
+        display: flex;
+        align-items: center;
       }
 
       .signature p{
-        transform: translate(-0%, -50%);
-        font-size: 20px;
+        font-size: 1.5rem;
+        text-decoration: none;
       }
 
       .social-media-icons-footer {
@@ -40,14 +43,16 @@
         height: 50%;
         bottom: 25%;
         right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
     }
 
     .social-media-icons-footer img {
         float: right;
-        max-height: 50%;
-        transform: translate(-0%, 50%);
-        right: 0px;
-        bottom: 0px;
+        filter: var(--color-light-background);
+        max-height: 40px;
+        max-width: auto;
         margin: 0 20px; /* Add some horizontal spacing between icons */
     }
 

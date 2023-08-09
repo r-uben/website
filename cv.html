@@ -11,47 +11,29 @@
     <link rel="stylesheet" type="text/css" href="styles/cv_content.css">
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link rel="stylesheet" type="text/css" href="styles/main_style.css">
-    <style>
-        /* Styles for CV sections */
-        .section {
-            margin-bottom: 20px;
-        }
-        
-        /* Styles for CV section headers */
-        .section h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        
-        /* Styles for CV section content */
-        .section p {
-            font-size: 16px;
-        }
-    </style>
     
 </head>
 <body class="body", id="bd">
     <header class="header", id="hdr">
         <!-- Header content goes here -->
         <nav>
-    
-            <div class="social-media-icons">
-                <a href="https://github.com/r-uben" target="_blank"><img src="styles/assets/github.png" alt="Github"></a>
-                <a href="https://twitter.com/__rub_" target="_blank"><img src="styles/assets/twitter.png" alt="Twitter"></a>
-                <a href="https://www.linkedin.com/in/rubén-fernández-fuertes/" target="_blank"><img src="styles/assets/linkedin.png" alt="linkedin"></a>
-            </div>
-            <ul>
-            <li><a href="#research">Research</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="#data">Data</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            </ul>
-
-            <div class="homepage">
-                <li><a href="index.html">Rubén Fernández-Fuertes</a></li>
-            </div>
-            <div class="homepage-mobile-phone">
+            <div class="parent-header"> 
+                <div class="homepage">
+                  <a href="index.html">Rubén Fernández-Fuertes</a>
+              </div>
+      
+              <div class="homepage-mobile-phone">
                 <a href="index.html"><img src="styles/assets/home.png" alt="home"></a>
+              </div>
+      
+                <div class="web-sections">
+                  <ul>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="#data">Data</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                  </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -59,7 +41,7 @@
         <div class="section">
             <h2>Personal Information</h2>
             <hr>
-            <div class="personal">
+            <div class="section-content">
             <p><strong>Name:</strong> Rubén Fernández-Fuertes</p>
             <p><strong>Date of Birth:</strong> July 1, 1997</p>
             <p><strong>Email:</strong> ruben.fernandez@phd.unibocconi.it</p>
@@ -70,47 +52,69 @@
         <div class="section">
             <h2>Summary</h2>
             <hr>
-            <div class="summary">
+            <div class="section-content">
                 <p>
                     I have received a Merid-Based Fellowship for a PhD program in Economics & Finance at 
                     the Università Bocconi. I am currently in the second year of the PhD. 
                 </p>
                 <p>
                     I have worked in Reinforcement Learning applied to 
-                    Portfolio Selection Optimisation problems, but I am also interested in Asset Pricing, Macro-Finance, Time Series Econometrics, Options, 
+                    Portfolio Selection Optimisation problem. Currently I'm working on Monetary Policy
+                    and Government Bonds. I broadly interested in Asset Pricing, Macro-Finance, Time Series Econometrics, Options, 
                     Climate Finance and many other areas in Finance which can be deeply connected with Mathematics.
                 </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Work Experience</h2>
+            <hr>
+
+            <div class="section-content-horizontal">
+                <div class="section-content-horizontal-left">
+                    <p><strong>Research Assistant of Prof. Roberto Vincenzi</strong></p>
+                    <p>Bocconi University </p>
+                    <p>2022-2023</p>
+                    <p>Description: Data Analysis</p>
+                </div>
+                <div class="section-content-horizontal-right">
+                    <p><strong>Research Assistant of Dr. James Costain</strong></p>
+                    <p>Monetary Policy and Capital Markets Division of the Banco de España  </p>
+                    <p>July 2023</p>
+                    <p>Description: R&R on “The Term Structure of Interest Rates in a Heterogeneous Monetary Union”, by J. Costain, G. Nuño, and C. Thomas </p>
+                </div>
+
             </div>
         </div>
         <div class="section">
             <h2>Education</h2>
             <hr>
-
-            <div class="education">
-                <div>
+            <div class="section-content-horizontal">
+                <div class="section-content-horizontal-left">
                     <p><strong>Bachelor of Mathematics</strong></p>
                     <p>Universidad Autónoma de Madrid </p>
                     <p>Graduated May 2019</p>
                 </div>
-                <div>
+                <div class="section-content-horizontal-right">
                     <p><strong>MSc in Teacher Training</strong></p>
                     <p>Universidad Europea </p>
                     <p>Graduated May 2020</p>
                 </div>
-                <div>
+            </div>
+            <div class="section-content-horizontal">
+                <div class="section-content-horizontal-left">
                     <p><strong>MSc in Mathematical Finance</strong></p>
                     <p>University of Manchester </p>
                     <p>Graduated June 2021</p>
                 </div>
-            </div>
-            <div class="education2">
-                <div>
+                <div class="section-content-horizontal-right">
                     <p><strong>PhD in Economics and Finance: Finance</strong></p>
                     <p>Bocconi University </p>
                     <p>In progress...</p>
                 </div>
-                
-                <div>
+            </div>
+            <div class="section-content-horizontal">
+                <div class="section-content-horizontal-alone">
                     <p><strong>CREI Macroeconomics Summer School</strong></p>
                     <p>Barcelona School of Economics </p>
                     <p>Attended June 2023</p>
@@ -125,32 +129,37 @@
         <div class="section">
             <h2>Certificates</h2>
             <hr>
-            <div class="certificates">
-            <p><strong>Certificate in Advanced English (CAE)</strong></p>
-            <p>189 out of 210</p>
-            <p>November 2019</p>
-            <p><strong>International English Language Testing System (IELTS)</strong></p>
-            <p>9 out of 10</p>
-            <p>January 2020</p>
-            
-            <p><strong>Professional Intermediate-level Music and Dance Qualification: Viola</strong></p>
-            <p>9 out of 10</output></p>
-            <p>June 2020</p>
+            <div class="section-content-horizontal-3">
+                <div class="section-content-horizontal-3-left">
+                    <p><strong>Certificate in Advanced English (CAE)</strong></p>
+                    <p>189 out of 210</p>
+                    <p>November 2019</p>
+                </div>
+                <div class="section-content-horizontal-3-center">
+                    <p><strong>International English Language Testing System (IELTS)</strong></p>
+                    <p>9 out of 10</p>
+                    <p>January 2020</p>
+                </div>
+                <div class="section-content-horizontal-3-right">
+                    <p><strong>Professional Intermediate-level Music and Dance Qualification: Viola</strong></p>
+                    <p>9 out of 10</output></p>
+                    <p>June 2020</p>
+                </div>
         </div>
         </div>
         <div class="section">
             <h2>Languages</h2>
             <hr>
-            <div class="languages">
-                <div>
+            <div class="section-content-horizontal-3">
+                <div class="section-content-horizontal-3-left">
                     <p><strong>Spanish</strong></p>
                     <p>Native language</p>
                 </div>
-                <div>
+                <div class="section-content-horizontal-3-center">
                     <p><strong>English</strong></p>
                     <p>Advanced Level</p>
                 </div>
-                <div>
+                <div class="section-content-horizontal-3-right">
                 <p><strong>Italian</strong></p>
                 <p>Advanced Level </p>
                 </div>
@@ -197,8 +206,16 @@
         </div>
     </div>
     <footer class="footer", id="ftr">
-        <!-- Footer content goes here -->
-        <p>&copy; 2023 Rubén Fernández-Fuertes.</p>
+        <div class="parent-footer">
+            <div class="signature">
+              <p>&copy; 2023 Rubén Fernández-Fuertes.</p>
+            </div>
+            <div class="social-media-icons-footer">
+                <a href="https://github.com/r-uben" target="_blank"><img src="styles/assets/github.png" alt="Github"></a>
+                <a href="https://twitter.com/__rub_" target="_blank"><img src="styles/assets/x.png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/in/rubén-fernández-fuertes/" target="_blank"><img src="styles/assets/linkedin.png" alt="linkedin"></a>
+            </div>
+        </div>
       </footer>
 </body>
 </html>

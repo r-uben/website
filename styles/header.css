@@ -8,6 +8,7 @@
         color: var(--color-light-background);
         top: 0px;
         height: 7.5vh;
+        margin: 0;
     }
 
     header.sticky{position:sticky;top:0}
@@ -20,6 +21,9 @@
         margin-left:5%;
         margin-right:5%;
         height: 7.5vh;
+        display: flex; /* Use flexbox to center vertically and horizontally */
+        justify-content: center;
+        align-items: center;
     }
 
     .homepage {
@@ -33,7 +37,7 @@
     }
     
     .homepage a {
-        font-size: 26px;
+        font-size: 1.5rem;
         text-decoration: none;
         color: var(--color-light-backgrounds);
     }
@@ -48,14 +52,16 @@
         width: 33%;
         height: 50%;
         bottom: 25%;
-        left: 33%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .web-sections ul {
         list-style: none;
         display: flex;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 
     .web-sections li {
@@ -65,7 +71,7 @@
     .web-sections a {
         text-decoration: none;
         color: var(--color-light-background);
-        font-size: 28px;
+        font-size: 1.5rem;
     }
 
 
