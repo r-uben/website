@@ -1,4 +1,4 @@
-@media (min-width: 1440px) {
+@media (min-width: 1800px) {
 
     .content {
         margin-top: 15vh; /* Adjust the value to match the height of your header */
@@ -143,7 +143,7 @@
 }
 
 
-@media (min-width: 981px) and (max-width: 1439px) {
+@media (min-width: 981px) and (max-width: 1800px) {
     
   .content {
       margin-top: 15vh; /* Adjust the value to match the height of your header */
