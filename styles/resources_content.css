@@ -102,7 +102,7 @@
 
 }
 
-@media (min-width: 980px) and (max-width: 1439px) {
+@media (min-width: 981px) and (max-width: 1439px) {
   .content {
       margin-top: 10vh; /* Adjust the value to match the height of your header */
       margin-bottom: 50px; /* Adjust the value to match the height of your footer */
@@ -207,84 +207,42 @@
 
 
 @media (max-width: 980px) {
+
   .content {
-      margin-top: 10vh; /* Adjust the value to match the height of your header */
-      margin-bottom: 50px; /* Adjust the value to match the height of your footer */
-      margin-left: 0vh; 
-      background-color: var(--color-light-background);
-      font-family: var(--main-font-family);
-      color: var(--color-dark-text);
-      flex: 1;
-      display: grid;
-    }      
-
-    .content div{
-      padding: 5px;
-    }
-    .content.sticky{
-      padding-top:0px;
-      padding-bottom: 30px;
-  }
-
-  .section{
-    margin-top: 5vh;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    position: absolute;
+    left: 10%;
+    padding-top:15%;
+    padding:5%;
+    right: auto;
+    padding-bottom: 25%;
     background-color: var(--color-light-background);
-  }
+    font-family: var(--main-font-family);
+    color: var(--color-dark-text);
+    align-items: center; 
+    justify-content: justify;
 
-  .section h2{
-    font-size: 30px;
-    justify-content: right;
-  }
+
+  }      
+
+.content p {
+  font-size: 1.5rem;
+}
+
+
+.section{
+  margin-top: 0vh;
+  background-color: var(--color-light-background);
+}
+
+.section h2{
+  font-size: 3rem;
+  justify-content: right;
+}
 
   .section p{
-    font-size: 18px;
-  }
-
-  .section li{
-    font-size: 18px;
-  }
-
-  .personal{
-    margin-top: 2vh;
-  }
-
-  .summary{
-    font-size: 20px;
-    line-height: 2;
+    font-size: 2rem;
+    line-height: 1.5;
     text-align: justify;
-    margin-top: 2vh;
-  }
-
-  .education
-  {
-    display:flex; 
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 2vh;
-  }
-
-  .education2
-  {
-    display:flex; 
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 2vh;
-  }
-
-  .languages
-  {
-    display:flex;
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 2vh;
   }
 
   hr {
@@ -292,18 +250,13 @@
     border-top: 2px solid var(--color-dark-text); /* Add custom border style */
     margin: 10px 0; /* Add margin for spacing */
 }
-  .certificates{
-    margin-top: 2vh;
-  }
 
-  .skills{
-    display:flex;
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 2vh;
+.links {
+  color: var(--color-dark-text);
+}
 
-  }
+.links:hover{
+  color: var(--color-light-hover);
+}
 
 }

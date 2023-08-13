@@ -95,7 +95,12 @@
         height: 7vh;
         padding: 5px;
         color: var(--color-light-background);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
+
 
     footer p {
         display: flex;
@@ -103,7 +108,7 @@
         align-items: center; /* Vertically center the content */
         padding: 0px;
         bottom:20px;
-        font-size: 22px;
+        font-size: 2rem;
         
     }
 

@@ -81,23 +81,33 @@
 
 @media (max-width: 980px) {
 
+    .box {
+        display: flex;
+
+        width:100%;
+    }
     .text-box {
+        position:absolute;
         color: var(--color-dark-background);
-        top: 25%;
-        margin-left: 17.5%;
-        margin-right: 17.5%;
+        width: 80%;
+        top: 20%;
+        left:15%;
+        padding: 2.5%;
         background-color: var(--color-light-background);
         box-sizing: border-box; /* Include the border in the box's total width and height */
         line-height: 2; /* Increase the line height to 1.5 times the font size */
         /* border: 3px solid transparent var(--color-light-background); /* Set transparent border */
         /* box-shadow: 0 0 20px 3px var(--color-dark-background);
         border-radius: 10px; /* Add border-radius property with desired value */
+        padding-bottom: 20%;
     }
-        .text-box h2{
-            font-size: 40px;
+        .text-box h2{        
+            text-align: center;
+            font-size: 4rem;
         }
         .text-box p{
-            font-size: 40px;
+            text-align: justify;
+            font-size: 2.33rem;
         }
         .image-box img {
             display: None;
