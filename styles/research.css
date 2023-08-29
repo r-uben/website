@@ -56,8 +56,20 @@
       font-size: 1.5rem;
     }
 
-    .subtitle{
-      font-size:2rem;
+    .subtitle {
+        font-size: 2rem;
+        margin: 0 0 10px;
+        position: relative;
+        padding-left: 30px; /* This space is for the bullet */
+    }
+    
+    .subtitle::before {
+        content: '•';  /* This is a bullet character */
+        font-size: 24px;  /* Adjust size as needed */
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%); /* To vertically center the bullet */
     }
     .paper{
       line-height: 2;
@@ -258,5 +270,11 @@
 .links:hover{
   color: var(--color-light-hover);
 }
+
+
+.subtitle {
+    font-size: 2rem;
+}
+
 
 }
