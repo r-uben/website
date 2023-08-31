@@ -60,26 +60,63 @@
 
 @media (min-width: 981px) and (max-width: 1439px) {
     
+    
     .footer {
         position: fixed;
-        bottom: 0;
-        left: 0;
+        bottom: 0vh;
         width: 100%;
         background-color: var(--color-dark-background);
-        height: 5vh;
-        padding: 10px;
+        height: 7.5vh;
         color: var(--color-light-background);
+        
     }
-
-    footer p{
-        margin-left: 5vh;
-    }
-
     footer.sticky{position: sticky;bottom: 0;}
 
-    nav .social-media-icons-footer{
-        display: none;
+
+    .parent-footer{
+        position: relative;
+        margin-left:5%;
+        margin-right:5%;
+        height: 7.5vh;
+        justify-content: center;
+        align-items: center;
     }
+
+
+    .signature{
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        bottom: 25%;
+        left: 0px;
+        display: flex;
+        align-items: center;
+      }
+
+      .signature p{
+        font-size: 1.5rem;
+        text-decoration: none;
+      }
+
+      .social-media-icons-footer {
+        position: absolute;
+        width: 20%;
+        height: 50%;
+        bottom: 25%;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    .social-media-icons-footer img {
+        float: right;
+        filter: var(--color-light-background);
+        max-height: 40px;
+        max-width: auto;
+        margin: 0 20px; /* Add some horizontal spacing between icons */
+    }
+
 
 }
 
@@ -87,43 +124,54 @@
 @media (max-width: 980px) {
 
 
+        
     .footer {
         position: fixed;
-        bottom: 0;
+        bottom: 0vh;
         width: 100%;
         background-color: var(--color-dark-background);
-        height: 7vh;
-        padding: 5px;
+        height: 7.5vh;
         color: var(--color-light-background);
+        
+    }
+    footer.sticky{position: sticky;bottom: 0;}
+
+
+    .parent-footer{
+        position: relative;
+        margin-left:5%;
+        margin-right:5%;
+        height: 7.5vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .signature{
+        display: none;
+
+      }
+
+
+      .social-media-icons-footer {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        bottom: 25%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-
-
-    footer p {
-        display: flex;
-        justify-content: center; /* Horizontally center the content */
-        align-items: center; /* Vertically center the content */
-        padding: 0px;
-        bottom:20px;
-        font-size: 2rem;
-        
+    .social-media-icons-footer img {
+        float: center;
+        filter: var(--color-light-background);
+        max-height: 50px;
+        max-width: auto;
+        margin: 0 20px; /* Add some horizontal spacing between icons */
     }
 
-    footer.sticky{position: sticky;bottom: 0;}
 
 
-    /* Styles for the links in the navigation bar */
-    nav div a {
-        text-decoration: none; /* Remove underline from links */
-        color: var(--color-nav-text); /* Set text color */
-        font-size: 25px; /* Set font size */
-    }
-
-    nav a:hover {
-        color: var(--color-hover); /* Change text color on hover */
-    }
 
 }
