@@ -115,11 +115,11 @@ nav ul li a {
 }
 
 section {
-    margin-bottom: 20em; /* Increase this value for more space */
+    margin-bottom: 10em; /* Reduced from 20em */
 }
 
 section h2 {
-    margin-top: 2em; /* This will add space above each section title */
+    margin-top: 1em; /* Reduced from 2em */
 }
 
 main section:first-child {
@@ -130,6 +130,8 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
+    transition: none; /* Remove any transitions */
+    animation: none; /* Remove any animations */
 }
 
 .email-link {
@@ -406,4 +408,65 @@ a.email-link:hover {
 
 .fixed-nav ul li a:hover {
     color: #ba2b2b; /* Change this to your preferred hover color */
+}
+
+.fixed-nav ul li a.active,
+.header-content nav ul li a.active {
+    color: #ba2b2b; /* Use your preferred active link color */
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+}
+
+main section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Remove these properties if they exist */
+/* 
+html {
+    scroll-snap-type: y mandatory;not 
+}
+
+main section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+*/
+
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.scroll-container > section, 
+.scroll-container > main > section {
+    min-height: 85vh; /* Reduced from 90vh or 100vh */
+    padding: 2vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.full-header {
+    min-height: 85vh; /* Match the other sections */
+}
+
+
+.scroll-container > main > section:last-of-type {
+    min-height: 75vh; /* Make the last section shorter */
+    padding-bottom: 3; /* Leave space for footer */
 }
