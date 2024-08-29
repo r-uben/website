@@ -623,3 +623,55 @@ main section {
         margin-bottom: 0.5em;
     }
 }
+
+/* General styles */
+body, p, .paper-abstract, #about p {
+    text-align: justify;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 0 15px; /* Increased from 10px */
+    }
+    
+    main {
+        padding: 20px 15px; /* Increased from 10px */
+    }
+    
+    /* Ensure text remains justified on small screens */
+    body, p, .paper-abstract, #about p {
+        text-align: justify;
+    }
+    
+    /* Increase margins for better readability */
+    .paper-item, #about, #research, #teaching, #contact {
+        margin-bottom: 2em; /* Increased space between sections */
+    }
+    
+    /* Adjust paper list layout for narrow screens */
+    .papers-list {
+        padding-left: 0.5em; /* Reduced padding */
+    }
+    
+    .paper-item {
+        gap: 1.5em; /* Increased gap */
+    }
+    
+    /* Increase readability by adjusting font sizes */
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    h1 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+}
