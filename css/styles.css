@@ -470,3 +470,109 @@ main section {
     min-height: 75vh; /* Make the last section shorter */
     padding-bottom: 3; /* Leave space for footer */
 }
+
+/* Adjust the container width for narrow screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 0 10px;
+    }
+
+    /* Increase text width on narrow screens */
+    main {
+        padding: 20px 10px;
+    }
+
+    /* Adjust alignment for the contact section */
+    #contact {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    /* Increase readability by adjusting font sizes */
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    /* Adjust paper list layout for narrow screens */
+    .papers-list {
+        padding-left: 1em;
+    }
+
+    .paper-item {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .paper-figure {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .full-header {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+
+    .header-content {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .full-header h1 {
+        font-size: 2em;
+        margin-bottom: 0.3em;
+    }
+
+    .full-header h2 {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .full-header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .full-header nav ul li {
+        margin: 5px;
+    }
+
+    .social-media {
+        margin-top: 15px;
+    }
+
+    .social-media a {
+        font-size: 1.2em;
+        margin: 0 8px;
+    }
+}
+
+/* Center section titles */
+@media (max-width: 768px) {
+    main section h2 {
+        text-align: center;
+    }
+
+    main section h3 {
+        text-align: center;
+        margin-left: 0; /* Remove the left margin if it exists */
+    }
+
+    main section h1 {
+        text-align: center;
+    }
+}
