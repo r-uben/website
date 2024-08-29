@@ -425,6 +425,10 @@ html, body {
 
 body {
     overflow-y: hidden; /* Hide vertical scrollbar */
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify; /* Add this line to justify text */
 }
 
 main section {
@@ -574,5 +578,12 @@ main section {
 
     main section h1 {
         text-align: center;
+    }
+}
+
+/* Add this media query at the end of the file */
+@media (max-width: 768px) {
+    body {
+        text-align: left; /* Change to left-aligned on small screens */
     }
 }
