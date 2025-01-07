@@ -953,3 +953,29 @@ body, p, .paper-abstract, #about p {
 [data-theme="dark"] .resource-link i {
     color: #ffffff;
 }
+
+.disclaimer {
+    background-color: #fff3cd;
+    border-left: 5px solid #ffeeba;
+    padding: 1em;
+    margin: 1em 0;
+    font-weight: 500;
+    color: #856404;
+}
+
+.disclaimer strong {
+    color: #856404;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+/* Dark mode styles for disclaimer */
+[data-theme="dark"] .disclaimer {
+    background-color: #2d2815;
+    border-left: 5px solid #856404;
+    color: #ffeeba;
+}
+
+[data-theme="dark"] .disclaimer strong {
+    color: #ffeeba;
+}
