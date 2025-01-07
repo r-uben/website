@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
 body, html {
     margin: 0;
@@ -674,4 +675,227 @@ body, p, .paper-abstract, #about p {
         font-size: 1.5em;
         margin-bottom: 0.5em;
     }
+}
+
+/* Add touch-friendly targets for mobile */
+@media (max-width: 768px) {
+    .nav-button {
+        padding: 15px;  /* Larger touch target */
+    }
+    
+    .fixed-nav ul li a {
+        padding: 15px 30px;  /* Larger touch targets for nav items */
+    }
+    
+    .social-media a {
+        padding: 10px;  /* Larger touch targets for social icons */
+        margin: 0 5px;
+    }
+}
+
+[data-theme="dark"] {
+    background-color: #121212;
+    color: #ffffff;  /* Changed to pure white for all base text */
+}
+
+[data-theme="dark"] .full-header {
+    background-color: #1a1a1a;
+}
+
+[data-theme="dark"] a {
+    color: #ffffff;  /* Pure white for links */
+}
+
+[data-theme="dark"] .paper-link, 
+[data-theme="dark"] .course-link, 
+[data-theme="dark"] nav ul li a {
+    color: #ffffff;  /* Pure white for all navigation and paper links */
+}
+
+[data-theme="dark"] .paper-abstract {
+    color: #f0f0f0;  /* Very light gray for abstracts */
+}
+
+/* Make course codes (strong elements) more visible */
+[data-theme="dark"] strong {
+    color: #ffffff;  /* Pure white */
+    font-weight: 700;  /* Bolder */
+}
+
+/* Make teaching role indicators (TA) more visible */
+[data-theme="dark"] .paper-item,
+[data-theme="dark"] #teaching li {
+    color: #f0f0f0;  /* Very light gray */
+}
+
+/* Ensure any parenthetical text is visible */
+[data-theme="dark"] span,
+[data-theme="dark"] small {
+    color: #f0f0f0;  /* Very light gray */
+}
+
+/* Make section titles stand out more */
+[data-theme="dark"] h2,
+[data-theme="dark"] h3 {
+    color: #ffffff;  /* Pure white */
+    text-shadow: 0 0 1px rgba(255,255,255,0.1);  /* Subtle glow effect */
+}
+
+/* Improve contrast for hover states in dark mode */
+[data-theme="dark"] .paper-link:hover, 
+[data-theme="dark"] .course-link:hover, 
+[data-theme="dark"] nav ul li a:hover {
+    color: #ff4444;  /* Brighter red for better visibility */
+}
+
+/* Adjust theme toggle button for dark mode */
+[data-theme="dark"] .theme-toggle {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);  /* Subtle background */
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2);  /* Lighter on hover */
+}
+
+/* Make navigation bars more visible in dark mode */
+[data-theme="dark"] .nav-button .bar {
+    background-color: #ffffff;
+}
+
+/* Improve readability of social media icons */
+[data-theme="dark"] .social-media a {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .social-media a:hover {
+    color: #ff4444;  /* Match other hover states */
+}
+
+/* Make email link more visible */
+[data-theme="dark"] a.email-link {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] a.email-link:hover {
+    color: #ff4444 !important;
+}
+
+/* Improve contrast for section headings */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3 {
+    color: #ffffff;  /* Ensure headers are pure white */
+}
+
+/* Make strong text more visible */
+[data-theme="dark"] strong {
+    color: #ffffff;
+    font-weight: 600;  /* Slightly bolder */
+}
+
+/* Theme toggle button base styles */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: none;
+    border: none;
+    color: #333333;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.05);  /* Subtle background in light mode */
+}
+
+.theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.1);  /* Darker on hover in light mode */
+}
+
+/* Dark mode specific styles for theme toggle */
+[data-theme="dark"] .theme-toggle {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);  /* Subtle background in dark mode */
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2);  /* Lighter on hover in dark mode */
+}
+
+/* Ensure paragraphs are pure white */
+[data-theme="dark"] p {
+    color: #ffffff;
+}
+
+/* Make teaching text pure white */
+[data-theme="dark"] #teaching p,
+[data-theme="dark"] #teaching li,
+[data-theme="dark"] #teaching span {
+    color: #ffffff;
+}
+
+/* Make role indicators (TA, Teaching) pure white */
+[data-theme="dark"] #teaching li::after,
+[data-theme="dark"] #teaching span {
+    color: #ffffff !important;
+}
+
+/* Ensure course titles and codes are pure white */
+[data-theme="dark"] .course-link,
+[data-theme="dark"] strong {
+    color: #ffffff;
+}
+
+/* Make any remaining gray text elements white */
+[data-theme="dark"] .paper-abstract,
+[data-theme="dark"] .paper-item,
+[data-theme="dark"] span,
+[data-theme="dark"] small {
+    color: #ffffff;
+}
+
+/* Keep hover states bright red */
+[data-theme="dark"] .course-link:hover {
+    color: #ff4444;
+}
+
+/* Make background color consistent in dark mode */
+[data-theme="dark"],
+[data-theme="dark"] .full-header,
+[data-theme="dark"] .fixed-nav {
+    background-color: #121212;
+}
+
+/* Fix navigation bar colors in dark mode */
+[data-theme="dark"] .nav-button {
+    background-color: transparent;
+}
+
+[data-theme="dark"] .nav-button .bar {
+    background-color: #ffffff;
+}
+
+[data-theme="dark"] .fixed-nav {
+    box-shadow: -2px 0 5px rgba(0,0,0,0.3);  /* Darker shadow for dark mode */
+}
+
+/* Fix footer in dark mode */
+[data-theme="dark"] footer {
+    background-color: #121212;
+    color: #ffffff;
+    border-top: 1px solid rgba(255,255,255,0.1);  /* Subtle separator */
+}
+
+/* Ensure consistent background for all sections */
+[data-theme="dark"] section,
+[data-theme="dark"] main {
+    background-color: #121212;
+}
+
+/* Fix any remaining background inconsistencies */
+[data-theme="dark"] .scroll-container {
+    background-color: #121212;
 }

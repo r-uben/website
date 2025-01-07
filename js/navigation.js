@@ -55,8 +55,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 
-    // Add scroll event listener to highlight active section
-    scrollContainer.addEventListener('scroll', highlightActiveSection);
+    // Add debouncing to scroll events for better performance
+    function debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    }
+
+    scrollContainer.addEventListener('scroll', debounce(highlightActiveSection, 100));
 
     let isScrolling = false;
     let scrollTimeout;
@@ -90,4 +102,40 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }, 100);
     });
 
+    // Theme toggling
+    function initializeTheme() {
+        // Always start with light theme
+        document.documentElement.setAttribute('data-theme', 'light');
+        
+        const themeToggle = document.getElementById('theme-toggle');
+        if (!themeToggle) return;
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            
+            // Update toggle button icon
+            const icon = themeToggle.querySelector('i');
+            if (icon) {
+                icon.className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            }
+            
+            // Store the preference
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            const icon = themeToggle.querySelector('i');
+            if (icon) {
+                icon.className = savedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            }
+        }
+    }
+
+    initializeTheme();
 });
