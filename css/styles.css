@@ -492,6 +492,9 @@ main section {
     /* Increase text width on narrow screens */
     main {
         padding: 20px 10px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     /* Adjust alignment for the contact section */
@@ -981,4 +984,70 @@ body, p, .paper-abstract, #about p {
 
 [data-theme="dark"] .disclaimer strong {
     color: #ffeeba;
+}
+
+/* Ajustes generales para móvil */
+@media (max-width: 768px) {
+    /* Eliminar padding lateral excesivo */
+    main {
+        padding: 20px 10px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Centrar contenido y eliminar indentaciones */
+    .resources-list,
+    .papers-list,
+    #teaching ul {
+        padding-left: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    /* Ajustar elementos de recursos */
+    .resource-item {
+        padding: 0 10px;
+        margin-bottom: 2em;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .resource-description {
+        padding-left: 0;
+        margin: 1em 0;
+    }
+
+    /* Ajustar el disclaimer */
+    .disclaimer {
+        margin: 1em 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Asegurar que los contenedores principales no causen scroll horizontal */
+    .scroll-container,
+    .container {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Ajustar elementos de papers */
+    .paper-item {
+        padding: 0 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .paper-content {
+        width: 100%;
+    }
+
+    /* Ajustar elementos de teaching */
+    #teaching li {
+        padding: 0 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
