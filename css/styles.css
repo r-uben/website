@@ -899,3 +899,57 @@ body, p, .paper-abstract, #about p {
 [data-theme="dark"] .scroll-container {
     background-color: #121212;
 }
+
+/* Resources section styles */
+.resources-list {
+    list-style-type: none;
+    padding-left: 2em;
+    margin-top: 2em;
+}
+
+.resource-item {
+    margin-bottom: 2em;
+}
+
+.resource-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    color: #333333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.resource-link:hover {
+    color: #ba2b2b;
+}
+
+.resource-description {
+    margin-top: 0.5em;
+    color: #666666;
+    font-size: 0.95em;
+    padding-left: 1.8em;
+}
+
+/* Dark mode styles for resources */
+[data-theme="dark"] .resource-link {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .resource-link:hover {
+    color: #ff4444;
+}
+
+[data-theme="dark"] .resource-description {
+    color: #ffffff;
+}
+
+/* Make sure the GitHub icon is visible in both modes */
+.resource-link i {
+    font-size: 1.2em;
+}
+
+[data-theme="dark"] .resource-link i {
+    color: #ffffff;
+}
