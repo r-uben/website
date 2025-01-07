@@ -86,7 +86,8 @@ h3 {
     font-size: 1.1em;
     text-decoration: underline;
     font-weight: 600;
-    margin-left: 2em;
+    margin-left: 0;
+    margin-bottom: 1em;
 }
 
 header, main, footer {
@@ -116,11 +117,12 @@ nav ul li a {
 }
 
 section {
-    margin-bottom: 10em; /* Reduced from 20em */
+    margin-bottom: 5em;
+    padding: 2em 0;
 }
 
 section h2 {
-    margin-top: 1em; /* Reduced from 2em */
+    margin-bottom: 1em;
 }
 
 main section:first-child {
@@ -167,10 +169,11 @@ a.email-link:hover {
 #teaching ul {
     list-style-type: none;
     padding-left: 2em;
+    margin-top: 1em;
 }
 
 #teaching li {
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 }
 
 #teaching strong {
@@ -195,7 +198,7 @@ a.email-link:hover {
 
 .papers-list {
     list-style-type: none;
-    padding-left: 4em;
+    padding-left: 2em;
 }
 
 .paper-item {
@@ -904,7 +907,7 @@ body, p, .paper-abstract, #about p {
 .resources-list {
     list-style-type: none;
     padding-left: 2em;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .resource-item {
