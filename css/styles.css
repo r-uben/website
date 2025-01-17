@@ -1067,3 +1067,38 @@ body, p, .paper-abstract, #about p {
 [data-theme="dark"] .resource-description ul li {
     color: #ffffff;
 }
+
+/* Manuscript link styles */
+.manuscript-link {
+    color: #666666;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.manuscript-link:hover {
+    color: #ba2b2b;
+    text-decoration: underline;
+}
+
+/* Dark mode styles for manuscript links */
+[data-theme="dark"] .manuscript-link {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .manuscript-link:hover {
+    color: #ff4444;
+}
+
+.publication-status {
+    color: #2e7d32;  /* Dark green color */
+    font-style: italic;
+    font-size: 0.9em;
+    margin-left: 0.5em;
+    display: inline-block;
+}
+
+/* Dark mode styles for publication status */
+[data-theme="dark"] .publication-status {
+    color: #81c784;  /* Lighter green for dark mode */
+}
