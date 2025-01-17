@@ -1102,3 +1102,12 @@ body, p, .paper-abstract, #about p {
 [data-theme="dark"] .publication-status {
     color: #81c784;  /* Lighter green for dark mode */
 }
+
+.paper-links {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.paper-abstract {
+    margin-bottom: 0.5em;
+}
