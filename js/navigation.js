@@ -116,6 +116,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
             
             document.documentElement.setAttribute('data-theme', newTheme);
             
+            // Update favicon
+            updateFavicon(newTheme);
+            
             // Update toggle button icon
             const icon = themeToggle.querySelector('i');
             if (icon) {
@@ -138,4 +141,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     initializeTheme();
+
+    function updateFavicon(theme) {
+        const lightSchemeIcon = document.querySelector('link#light-scheme-icon');
+        const darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+
+        if (theme === 'dark') {
+            lightSchemeIcon.remove();
+            document.head.append(darkSchemeIcon);
+        } else {
+            darkSchemeIcon.remove();
+            document.head.append(lightSchemeIcon);
+        }
+    }
 });
